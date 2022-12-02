@@ -44,16 +44,16 @@ export default function HomeMain() {
             <div className="relative px-6 lg:px-8">
             <div className="mx-auto max-w-3xl">
                 <div className="py-4">
-                {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                     <span className="text-gray-600">
-                        <a href="#" className="font-semibold text-indigo-600">
+                        <a href="https://github.com/blackistheneworange/urlen-public" target="_blank" className="font-semibold text-indigo-600">
                         <span className="absolute inset-0" aria-hidden="true" />
-                        Know how it works <span aria-hidden="true">&rarr;</span>
+                        Get Code <span aria-hidden="true">&rarr;</span>
                         </a>
                     </span>
                     </div>
-                </div> */}
+                </div>
                 <form onSubmit={handleSubmit}>
                     <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                     Shorten URL in Seconds
@@ -63,7 +63,7 @@ export default function HomeMain() {
                     </p>
                     
                     <div className="flex align-center justify-center">
-                        <div className="relative mt-1 rounded-md shadow-sm w-1/2">
+                        <div className="relative mt-1 rounded-md shadow-sm w-full sm:w-1/2">
                             <input
                                 type="url"
                                 id="url"
@@ -76,7 +76,7 @@ export default function HomeMain() {
                             />
                         </div>
                     </div>
-                    <div className="mt-8 flex gap-x-4 sm:justify-center">
+                    <div className="mt-8 flex gap-x-4 justify-center">
                     <button
                         name="submitBtn"
                         className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"

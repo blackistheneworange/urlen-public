@@ -66,28 +66,28 @@ export default function ApiIntegrationModal({open, setOpen, url, shortUrl}) {
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg" style={{minWidth:"50%"}}>
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                  <div className="sm:flex sm:items-start flex-col">
+                  <div className="flex items-start flex-col">
                     <div className="w-full flex align-center justify-start">
-                        <div className="mx-auto flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
                         <CodeBracketSquareIcon className="h-6 w-6 text-blue-600" aria-hidden="true" />
                         </div>
                       <Dialog.Title as="h3" className="ml-3 self-center text-xl font-medium leading-6 text-gray-900">
                         API Integration
                       </Dialog.Title>
                     </div>
-                    <div className="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                    <div className="mt-3 text-center sm:mt-0 text-left w-full">
                       <hr className="mt-3"/>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500 mt-3">
+                        <p className="text-sm text-left text-gray-500 mt-3">
                           URLen.one URL shortener can be integrated into any application using below API endpoints. 
                         </p>
-                        <p className="text-md text-slate-900 my-2 underline">
+                        <p className="text-md text-left text-slate-900 my-2 underline">
                             Generate/Get Short URL
                         </p>
-                        <div>
+                        <div className="text-left">
                             <Prism language="git" colorScheme='dark' noCopy={true}>{apiRequestUrlText}</Prism>
                         </div>
-                        <div className="mt-3">
+                        <div className="mt-3 text-left">
                             <Prism.Tabs defaultValue="body">
                                 <Prism.TabsList>
                                     <Prism.Tab value="body">Request Body</Prism.Tab>
@@ -95,7 +95,7 @@ export default function ApiIntegrationModal({open, setOpen, url, shortUrl}) {
                                 <Prism language="json" colorScheme='dark'>{apiRequestBodyText}</Prism>
                             </Prism.Tabs>
                         </div>
-                        <div className="mt-3">
+                        <div className="mt-3 text-left">
                             <Prism.Tabs defaultValue="successResponse">
                                 <Prism.TabsList>
                                     <Prism.Tab value="successResponse">Success Response</Prism.Tab>
