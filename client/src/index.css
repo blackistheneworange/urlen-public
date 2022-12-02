@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.App{
+  height:100%;
+}
+body{
+  height:100vh;
+}
